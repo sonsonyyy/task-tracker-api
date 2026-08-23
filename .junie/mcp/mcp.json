@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/opt/homebrew/Cellar/php@8.4/8.4.22/bin/php",
+            "args": [
+                "/Users/ericksalangsang/Desktop/task-tracker-api/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
