@@ -16,6 +16,6 @@ class WorkspaceController extends Controller
 
         return (new WorkspaceResource($workspace))
             ->response()
-            ->setStatusCode(201);            
+            ->setStatusCode(201);
     }
 }

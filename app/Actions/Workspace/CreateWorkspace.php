@@ -10,7 +10,7 @@ class CreateWorkspace
     {
         return WorkSpace::create([
             'title' => $data['title'],
-            'description' => $data['description']
+            'description' => $data['description'],
         ]);
     }
 }
