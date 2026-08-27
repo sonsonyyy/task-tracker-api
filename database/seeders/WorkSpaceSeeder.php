@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\WorkSpace;
+use App\Models\Workspace;
 use Illuminate\Database\Seeder;
 
-class WorkSpaceSeeder extends Seeder
+class WorkspaceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        WorkSpace::factory()
+        Workspace::factory()
             ->count(2)
             ->create();
     }

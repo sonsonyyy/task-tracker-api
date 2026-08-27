@@ -2,13 +2,13 @@
 
 namespace App\Actions\Workspace;
 
-use App\Models\WorkSpace;
+use App\Models\Workspace;
 
 class CreateWorkspace
 {
-    public function handle(array $data): WorkSpace
+    public function handle(array $data): Workspace
     {
-        return WorkSpace::create([
+        return Workspace::create([
             'title' => $data['title'],
             'description' => $data['description'],
         ]);

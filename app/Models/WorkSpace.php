@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-use Database\Factories\WorkSpaceFactory;
+use Database\Factories\WorkspaceFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 #[Fillable(['title', 'description'])]
-class WorkSpace extends Model
+class Workspace extends Model
 {
-    /** @use HasFactory<WorkSpaceFactory> */
+    /** @use HasFactory<WorkspaceFactory> */
     use HasFactory;
 }
