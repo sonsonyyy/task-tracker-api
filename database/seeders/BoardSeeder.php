@@ -6,15 +6,16 @@ use App\Models\Board;
 use App\Models\Workspace;
 use Illuminate\Database\Seeder;
 
-class WorkspaceSeeder extends Seeder
+class BoardSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Workspace::factory()
-            ->has(Board::factory()->count(2))
+        Board::factory()
+            ->count(2)
+            ->for(Workspace::factory())
             ->create();
     }
 }
