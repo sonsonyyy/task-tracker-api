@@ -4,17 +4,19 @@ namespace Database\Seeders;
 
 use App\Models\Card;
 use App\Models\Task;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CardSeeder extends Seeder
+class TaskSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Card::factory()
-            ->has(Task::factory()->count(10))
+        Task::factory()
+            ->count(5)
+            ->for(Card::factory())
             ->create();
     }
 }

@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             WorkSpaceSeeder::class,
             BoardSeeder::class,
             CardSeeder::class,
+            TaskSeeder::class,
         ]);
     }
 }
