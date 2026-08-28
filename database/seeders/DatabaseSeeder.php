@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             WorkSpaceSeeder::class,
             BoardSeeder::class,
+            CardSeeder::class,
         ]);
     }
 }

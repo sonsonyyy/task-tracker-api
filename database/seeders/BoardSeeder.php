@@ -16,6 +16,11 @@ class BoardSeeder extends Seeder
         Board::factory()
             ->count(2)
             ->for(Workspace::factory())
+            ->hasCards(
+                ['title' => 'Pending'],
+                ['title' => 'On-going'],
+                ['title' => 'Done'],
+            )
             ->create();
     }
 }
